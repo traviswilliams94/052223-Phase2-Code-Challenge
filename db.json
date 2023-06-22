@@ -90,13 +90,6 @@
       "category": "Food",
       "amount": "-1.99",
       "id": 13
-    },
-    {
-      "date": "2023-06-22",
-      "description": "Lunch",
-      "category": "Food",
-      "amount": "-10.92",
-      "id": 14
     }
   ]
 }
