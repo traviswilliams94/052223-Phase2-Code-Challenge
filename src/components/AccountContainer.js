@@ -17,11 +17,16 @@ function addTransaction(newTransaction){
   setTransactions(updatedTransactions)
 }
 
+function deleteTransaction(id) {
+  const updatedTransactions = transactions.filter(transaction => transaction.id !== id)
+  setTransactions(updatedTransactions)
+}
+
   return (
     <div>
       <Search searchState={searchState} handleSearch={handleSearch}/>
       <AddTransactionForm addTransaction={addTransaction}/>
-      <TransactionsList transactions={transactions} searchedTransactions={searchedTransactions}/>
+      <TransactionsList transactions={transactions} searchedTransactions={searchedTransactions} deleteTransaction={deleteTransaction}/>
     </div>
   );
 }
